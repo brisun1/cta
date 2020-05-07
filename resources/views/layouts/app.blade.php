@@ -72,9 +72,21 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        @include('inc.navbar')
+        <!--<main class="py-4">-->
+            
+        @include('inc.messages')
+        @yield('content')
+            
+            
+        
+
+
+        {{-- <main class="py-4">
             @yield('content')
-        </main>
+        </main> --}}
+        <!--</main>-->
+        {{-- @yield('scripts') --}}
     </div>
 </body>
 </html>

@@ -13,10 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('pages/index');
+// });
 Route::get('/', function () {
-    return view('welcome');
-});
-
+         return view('pages/index');
+    });
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('menu/{id}', 'MenuController@show');
+Route::get('/shop', 'Api\ShopController@index');
+
+//my code
+//Route::view('/{path?}', 'app');

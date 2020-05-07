@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link href="css/app.css" rel="stylesheet" type="text/css">
         <title>Laravel</title>
 
         <!-- Fonts -->
@@ -68,7 +68,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}">Home </a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
 
@@ -81,20 +81,19 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Laravel welcome page
                 </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                <div id="menu" class=""></div>
+                <div id="example" class="">
                 </div>
+                <div id="test" class="">
+                </div>
+                <div id="shop" class="text-danger">
+                
             </div>
         </div>
+        <script type="text/javascript" src="/js/app.js">
+
+            </script>
     </body>
 </html>
